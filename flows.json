@@ -1,0 +1,656 @@
+[
+    {
+        "id": "23b06b8bb1d4f994",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f604842e1017915b",
+        "type": "tls-config",
+        "name": "TLS Config",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "8cc5b175b7abfb49c8024e441f6274d1356f97fef171480cfb38f6d221744e19-certificate.pem (1).crt",
+        "keyname": "8cc5b175b7abfb49c8024e441f6274d1356f97fef171480cfb38f6d221744e19-private.pem.key",
+        "caname": "AmazonRootCA1.pem",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "9c2cecc355cb3afa",
+        "type": "mqtt-broker",
+        "name": "AWS New Endpoint",
+        "broker": "a2qrzuxbj02fml-ats.iot.us-east-2.amazonaws.com",
+        "port": "8883",
+        "tls": "f604842e1017915b",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f098d28bd8a54a27",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "64b07586.8c0c44",
+        "type": "ui_group",
+        "name": "Smart Pill Dispenser Dashboard",
+        "tab": "d338eebb.4a506",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d338eebb.4a506",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5029d507.0459cc",
+        "type": "ui_group",
+        "name": "flowtest",
+        "tab": "d7adc994.2273a8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d7adc994.2273a8",
+        "type": "ui_tab",
+        "name": "Widgets",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "62f629e9f6930e03",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "m2uggnsozxuqlq5il9mk0bta58degy56j9n13is7uoszzegu6aly59mejmfs8j9o",
+        "server": "nodered03.remote-red.com",
+        "region": "us"
+    },
+    {
+        "id": "userInput",
+        "type": "ui_text_input",
+        "z": "23b06b8bb1d4f994",
+        "name": "User Input",
+        "label": "Enter Number of Pills",
+        "tooltip": "",
+        "group": "64b07586.8c0c44",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 260,
+        "wires": [
+            [
+                "formatTopic",
+                "beaf64ff27ce9de8"
+            ]
+        ]
+    },
+    {
+        "id": "formatTopic",
+        "type": "change",
+        "z": "23b06b8bb1d4f994",
+        "name": "Set Topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "sensor/pillsRemaining",
+                "tot": "str"
+            }
+        ],
+        "x": 580,
+        "y": 220,
+        "wires": [
+            [
+                "4ac0f56b5df9cc3e"
+            ]
+        ]
+    },
+    {
+        "id": "mqttSubscribe",
+        "type": "mqtt in",
+        "z": "23b06b8bb1d4f994",
+        "name": "",
+        "topic": "sensor/pillsRemaining",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "9c2cecc355cb3afa",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "debugOutput",
+                "0d6a0cbcc3db6bf8"
+            ]
+        ]
+    },
+    {
+        "id": "debugOutput",
+        "type": "debug",
+        "z": "23b06b8bb1d4f994",
+        "name": "Debug",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 450,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "beaf64ff27ce9de8",
+        "type": "mqtt out",
+        "z": "23b06b8bb1d4f994",
+        "name": "",
+        "topic": "sensor/pillsRemaining",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c2cecc355cb3afa",
+        "x": 620,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "0d6a0cbcc3db6bf8",
+        "type": "ui_gauge",
+        "z": "23b06b8bb1d4f994",
+        "name": "",
+        "group": "64b07586.8c0c44",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Number of Pills",
+        "label": "pills",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#4144af",
+            "#4e80d0",
+            "#8fe4ea"
+        ],
+        "seg1": "10",
+        "seg2": "20",
+        "diff": false,
+        "className": "",
+        "x": 480,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "5a3a4ce7ea59b1dc",
+        "type": "inject",
+        "z": "23b06b8bb1d4f994",
+        "name": "Pills Remaining",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensors/pillsRemaining",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "userInput"
+            ]
+        ]
+    },
+    {
+        "id": "7282d51d6e39daa7",
+        "type": "ui_text",
+        "z": "23b06b8bb1d4f994",
+        "group": "64b07586.8c0c44",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Dosage Time:",
+        "format": "{{value}} Hour(s)",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 380,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "77a3439ab83c78ce",
+        "type": "mqtt in",
+        "z": "23b06b8bb1d4f994",
+        "name": "",
+        "topic": "sensor/dosageTime",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "9c2cecc355cb3afa",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 150,
+        "y": 380,
+        "wires": [
+            [
+                "7282d51d6e39daa7",
+                "0588a4a3678f04f5"
+            ]
+        ]
+    },
+    {
+        "id": "0588a4a3678f04f5",
+        "type": "debug",
+        "z": "23b06b8bb1d4f994",
+        "name": "Debug",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 350,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "288457bb48ecc24a",
+        "type": "ui_text_input",
+        "z": "23b06b8bb1d4f994",
+        "name": "User Input",
+        "label": "Enter Dosage Time",
+        "tooltip": "",
+        "group": "64b07586.8c0c44",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 500,
+        "wires": [
+            [
+                "b33b4ec92bbab446",
+                "4d0c5b9bd8df4308",
+                "convert_to_milliseconds"
+            ]
+        ]
+    },
+    {
+        "id": "b33b4ec92bbab446",
+        "type": "change",
+        "z": "23b06b8bb1d4f994",
+        "name": "Set Topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "sensor/dosageTime",
+                "tot": "str"
+            }
+        ],
+        "x": 560,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d0c5b9bd8df4308",
+        "type": "mqtt out",
+        "z": "23b06b8bb1d4f994",
+        "name": "",
+        "topic": "sensor/dosageTime",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c2cecc355cb3afa",
+        "x": 600,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "2ab1038b6960ed8c",
+        "type": "inject",
+        "z": "23b06b8bb1d4f994",
+        "name": "Dosage Time",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensors/dosageTime",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "288457bb48ecc24a"
+            ]
+        ]
+    },
+    {
+        "id": "4ac0f56b5df9cc3e",
+        "type": "ui_button",
+        "z": "23b06b8bb1d4f994",
+        "name": "",
+        "group": "64b07586.8c0c44",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Refill",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": " 0",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 730,
+        "y": 220,
+        "wires": [
+            [
+                "c58323b0265a2033",
+                "2ce02ac4dd720c3c",
+                "userInput"
+            ]
+        ]
+    },
+    {
+        "id": "c58323b0265a2033",
+        "type": "remote-notification",
+        "z": "23b06b8bb1d4f994",
+        "confignode": "62f629e9f6930e03",
+        "name": "Smart Pill Dispenser",
+        "notificationTitle": "Refill Notification",
+        "notificationTitleType": "str",
+        "notificationBody": "Your pills have been refilled. Please enter the new number of pills!",
+        "notificationBodyType": "str",
+        "notificationSound": "default",
+        "notificationSoundComputed": "payload.sound",
+        "notificationSoundComputedType": "msg",
+        "output": 1,
+        "x": 960,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "convert_to_milliseconds",
+        "type": "function",
+        "z": "23b06b8bb1d4f994",
+        "name": "Convert to Milliseconds",
+        "func": "const dosageTimeHours = Number(msg.payload);\nif (isNaN(dosageTimeHours) || dosageTimeHours <= 0) {\n    node.error('Invalid input. Enter a positive number for hours.');\n    return null;\n}\n\nmsg.delay = dosageTimeHours * 3600 * 1000; // Convert hours to milliseconds\nnode.status({ text: `Delay set to ${msg.delay} ms` });\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 480,
+        "wires": [
+            [
+                "update_trigger"
+            ]
+        ]
+    },
+    {
+        "id": "update_trigger",
+        "type": "trigger",
+        "z": "23b06b8bb1d4f994",
+        "name": "Trigger Node",
+        "op1": "Time to take your dosage!",
+        "op2": "",
+        "op1type": "str",
+        "op2type": "nul",
+        "duration": "-30",
+        "extend": false,
+        "overrideDelay": true,
+        "units": "s",
+        "reset": "0",
+        "bytopic": "topic",
+        "topic": "sensor/dosageTime",
+        "outputs": 1,
+        "x": 870,
+        "y": 480,
+        "wires": [
+            [
+                "f6b357b0bfd0d5c1"
+            ]
+        ]
+    },
+    {
+        "id": "f6b357b0bfd0d5c1",
+        "type": "remote-notification",
+        "z": "23b06b8bb1d4f994",
+        "confignode": "62f629e9f6930e03",
+        "name": "Smart Pill Dispenser",
+        "notificationTitle": "Dosage Notification",
+        "notificationTitleType": "str",
+        "notificationBody": "Time to take your pills!",
+        "notificationBodyType": "str",
+        "notificationSound": "default",
+        "notificationSoundComputed": "payload.sound",
+        "notificationSoundComputedType": "msg",
+        "output": 1,
+        "x": 1100,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ce02ac4dd720c3c",
+        "type": "mqtt out",
+        "z": "23b06b8bb1d4f994",
+        "name": "",
+        "topic": "sensor/refillPills",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c2cecc355cb3afa",
+        "x": 940,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "dea9cc8f123cd19b",
+        "type": "remote-access",
+        "z": "23b06b8bb1d4f994",
+        "confignode": "62f629e9f6930e03",
+        "name": "Open on Mobile",
+        "verbose": 0,
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [],
+            []
+        ]
+    }
+]
